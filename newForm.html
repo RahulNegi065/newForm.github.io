@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="newForm.css">
+    <script src="newForm.js" async></script>
+    <title>Future Lift Form</title>
+</head>
+<body>
+    <nav><h1>Form For Future Lift</h1></nav>
+
+    <form id="form" action="">
+        
+        <div class="tab">
+            <h3>Before Test</h3>
+            <p>Full Name :</p>
+            <input type="text" placeholder="Full Name..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tell" placeholder="Mobile No..." oninput="this.className = ''">
+            <p>City :</p>
+            <input type="text" placeholder="City..." oninput="this.className = ''">
+            <div class="btn">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit</button>
+            </div>
+        </div>
+
+        <div class="tab">
+            <h3>After Test</h3>
+            <p>Full Name :</p>
+            <input type="text" placeholder="Full Name..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tell" placeholder="Mobile No..." oninput="this.className = ''">
+            <p>Email Id :</p>
+            <input type="email" placeholder="Email Id..." oninput="this.className = ''">
+            <p>Select Course :</p>
+            <input type="text" list="courses" placeholder="Interested Courses" oninput="this.className = ''">
+            <datalist id="courses">
+                <option>Course1</option>
+                <option>Course2</option>
+                <option>Course3</option>
+                <option>Course4</option>
+                <option>Course5</option>
+            </datalist>
+            <p>City :</p>
+            <input type="text" placeholder="City..." oninput="this.className = ''">
+            <p>Father Name :</p>
+            <input type="text" placeholder="Father Name..." oninput="this.className = ''">
+            <p>Mother Name :</p>
+            <input type="text" placeholder="Mother Name..." oninput="this.className = ''">
+            <label for="schedule" style="color: white; font-size: 1rem; margin-left: 0; width: 30rem;">Schedule Time (Date & Time for call):</label>
+            <input type="datetime-local" id="schedule" name="schedule">
+            <p>Select Counsellor :</p>
+            <input type="text" list="counsellor" placeholder="Career Councellor..." oninput="this.className = ''">
+            <datalist id="counsellor">
+                <option>Counsellor1</option>
+                <option>Counsellor2</option>
+                <option>Counsellor3</option>
+                <option>Counsellor4</option>
+                <option>Counsellor5</option>
+            </datalist>
+            <div class="btn">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit</button>
+            </div>
+        </div>
+
+        <div class="tab">
+            <h3>Career Councellor</h3>
+            <p>Full Name :</p>
+            <input type="text" placeholder="Full Name..." oninput="this.className = ''">
+            <p>Address :</p>
+            <input type="text" placeholder="Address..." oninput="this.className = ''">
+            <p>City :</p>
+            <input type="text" placeholder="City..." oninput="this.className = ''">
+            <p>Pincode :</p>
+            <input type="number" placeholder="PIN..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tel" placeholder="Mobile Number..." oninput="this.className = ''">
+            <p>Alternate No :</p>
+            <input type="number" placeholder="Alternate Number..." oninput="this.className = ''">
+            <p>Email Id :</p>
+            <input type="email" placeholder="Email Id..." oninput="this.className = ''">
+            <p>Highest Qualification :</p>
+            <input type="text" placeholder="Education Qualification..." oninput="this.className = ''">
+            <div class="filter" style="color: white; font-size: 1rem;">Job Experience?
+            <input id="yes" name="toggle" type="radio">
+                <label for="yes">Yes</label>
+            <input id="no" name="toggle" type="radio">
+                <label for="no">No</label>
+            </div>
+            <div class="btn">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit</button>
+            </div>
+        </div>
+
+        <div class="tab">
+            <h3>College Admission Form</h3>
+            <p>Full Name :</p>
+            <input type="text" placeholder="Full Name..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tell" placeholder="Mobile No..." oninput="this.className = ''">
+            <p>Email Id :</p>
+            <input type="email" placeholder="Email Id..." oninput="this.className = ''">
+            <p>Father Name :</p>
+            <input type="text" placeholder="Father Name..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tell" placeholder="Mobile No..." oninput="this.className = ''">
+            <p>10th Percentage :</p>
+            <input type="number" placeholder="10th Percentage..." oninput="this.className = ''">
+            <p>12th Percentage :</p>
+            <input type="number" placeholder="12th Percentage..." oninput="this.className = ''">
+            <p>Graduation Percentage :</p>
+            <input type="number" placeholder="Graduation Percentage..." oninput="this.className = ''">
+            <p>Interested Course :</p>
+            <input type="text" list="courses" placeholder="Interested Courses" oninput="this.className = ''">
+            <datalist id="courses">
+                <option>Course1</option>
+                <option>Course2</option>
+                <option>Course3</option>
+                <option>Course4</option>
+                <option>Course5</option>
+            </datalist>
+            <p>Interested Colleges :</p>
+            <input type="text" list="colleges" placeholder="Interested Colleges" oninput="this.className = ''">
+            <datalist id="colleges">
+                <option>College1</option>
+                <option>College2</option>
+                <option>College3</option>
+                <option>College4</option>
+                <option>College5</option>
+            </datalist>
+            <p>Permanent Address :</p>
+            <input type="text" placeholder="Permanent Address..." oninput="this.className = ''">
+            <p>City :</p>
+            <input type="text" placeholder="City..." oninput="this.className = ''">
+            <p>Pincode :</p>
+            <input type="number" placeholder="PIN..." oninput="this.className = ''">
+            <div class="btn">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+        </div>
+
+        <div class="tab">
+            <h4>1st Step</h4>
+            <p>Creator Name :</p>
+            <input type="text" placeholder="Creator Name..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tell" placeholder="Mobile No..." oninput="this.className = ''">
+            <p>Email Id :</p>
+            <input type="email" placeholder="Email Id..." oninput="this.className = ''">
+            <p>College Full Name :</p>
+            <input type="text" placeholder="College Full Name..." oninput="this.className = ''">
+            <p>College Location :</p>
+            <input type="text" placeholder="College Location..." oninput="this.className = ''">
+            <p>City :</p>
+            <input type="text" placeholder="City..." oninput="this.className = ''">
+            <p>District :</p>
+            <input type="text" placeholder="District..." oninput="this.className = ''">
+            <p>State :</p>
+            <input type="text" placeholder="State..." oninput="this.className = ''">
+            <p>Approved by :</p>
+            <input type="text" placeholder="Approved by..." oninput="this.className = ''">
+            <p>College Website :</p>
+            <input type="text" placeholder="college Website..." oninput="this.className = ''">
+            <p>Email Id :</p>
+            <input type="email" placeholder="Email Id..." oninput="this.className = ''">
+            <p>Mobile No :</p>
+            <input type="tell" placeholder="Mobile No..." oninput="this.className = ''">
+            <div class="btn">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            </div>
+        </div>
+
+        <div class="tab">
+            <h4>2nd Step</h4>
+            <p>Courses :</p>
+            <input type="text" list="courses" placeholder="Courses..." oninput="this.className = ''">
+            <datalist id="courses">
+                <option>BCA</option>
+                <option>BTech</option>
+                <option>BSc</option>
+                <option>MCA</option>
+                <option>MTech</option>
+                <option>MSc</option>
+            </datalist>
+                <div class="btn">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+        </div>
+
+        <div class="tab">
+            <h4>3rd Step</h4>
+            <h3>Bank Details</h3>
+            <p>Account Name :</p>
+            <input type="text" placeholder="Account Name..." oninput="this.className = ''">
+            <p>Account No :</p>
+            <input type="number" placeholder="Account Number..." oninput="this.className = ''">
+            <p>IFSC :</p>
+            <input type="text" placeholder="IFSC...">
+            <div class="btn">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="steps">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+
+</body>
+</html>
